@@ -23,6 +23,33 @@ class TopDestinationListFrame extends JFrame {
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setSize(900, 750);
+        
+        // North panel for logo and searchbar
+        JPanel topPanel = new JPanel(); 
+        topPanel.setBackground(new Color(16, 71, 222));
+        topPanel.setLayout(new BoxLayout(topPanel, BoxLayout.X_AXIS)); // Set layout manager, chose BoxLayout to put multiple components horizontally
+        topPanel.setBorder(BorderFactory.createEmptyBorder(5,5,5,5));
+        
+        // Make and Add logo txt
+        JLabel snhuTravelLabel = new JLabel("SNHU Travel");
+        snhuTravelLabel.setFont(new Font("Dialog-BoldItalic", Font.BOLD, 20));
+        snhuTravelLabel.setForeground(new Color(255, 201, 25));
+        topPanel.add(snhuTravelLabel);
+        Border SoftBevelLower = BorderFactory.createBevelBorder(BevelBorder.LOWERED, Color.black, Color.blue); // Create styled border
+        snhuTravelLabel.setBorder(SoftBevelLower); // Set the border to new styled border
+        
+        // Create search bar
+        JTextField searchBar = new JTextField();
+        searchBar.setPreferredSize(new Dimension(250, 40));
+        topPanel.add(searchBar); // Add search bar to topPanel
+        
+        // Create search button
+        JButton button = new JButton("Search");
+        topPanel.add(button);
+        
+        getContentPane().add(topPanel, BorderLayout.NORTH);
+        
+        
 
         listModel = new DefaultListModel();
 
@@ -40,6 +67,7 @@ class TopDestinationListFrame extends JFrame {
         TextAndIconListCellRenderer renderer = new TextAndIconListCellRenderer(2);
 
         list.setCellRenderer(renderer);
+
 
         getContentPane().add(scrollPane, BorderLayout.CENTER);
     }
