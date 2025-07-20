@@ -28,24 +28,35 @@ class TopDestinationListFrame extends JFrame {
         JPanel topPanel = new JPanel(); 
         topPanel.setBackground(new Color(16, 71, 222));
         topPanel.setLayout(new BoxLayout(topPanel, BoxLayout.X_AXIS)); // Set layout manager, chose BoxLayout to put multiple components horizontally
-        topPanel.setBorder(BorderFactory.createEmptyBorder(5,5,5,5));
+        topPanel.setBorder(BorderFactory.createEmptyBorder(5,10,5,10));
         
         // Make and Add logo txt
         JLabel snhuTravelLabel = new JLabel("SNHU Travel");
         snhuTravelLabel.setFont(new Font("Dialog-BoldItalic", Font.BOLD, 20));
         snhuTravelLabel.setForeground(new Color(255, 201, 25));
-        topPanel.add(snhuTravelLabel);
         Border SoftBevelLower = BorderFactory.createBevelBorder(BevelBorder.LOWERED, Color.black, Color.blue); // Create styled border
-        snhuTravelLabel.setBorder(SoftBevelLower); // Set the border to new styled border
+        Border padding = BorderFactory.createEmptyBorder(5,10,5,10); // Padding for bevel around SNHU txt
+        Border SoftBevelPadding = BorderFactory.createCompoundBorder(SoftBevelLower, padding); // Combine the bevel and the padding
+        snhuTravelLabel.setBorder(SoftBevelPadding); // Set the border to new styled border
+        topPanel.add(snhuTravelLabel); // Add to topPanel
+        
+        topPanel.add(Box.createHorizontalStrut(20)); // Add space between SNHU txt and the bar
         
         // Create search bar
         JTextField searchBar = new JTextField();
-        searchBar.setPreferredSize(new Dimension(250, 40));
+        searchBar.setPreferredSize(new Dimension(400, 50)); // change bar dimensions
+        searchBar.setMaximumSize(new Dimension(400, 50));
         topPanel.add(searchBar); // Add search bar to topPanel
         
+        topPanel.add(Box.createHorizontalStrut(20)); // Add space between bar and button
+        
         // Create search button
-        JButton button = new JButton("Search");
+        ImageIcon searchIcon = new ImageIcon(getClass().getResource("/resources/search2.png"));
+        JButton button = new JButton(searchIcon);
+        button.setPreferredSize(new Dimension(100, 50)); // change button dimensions
+        button.setMaximumSize(new Dimension(100, 50));
         topPanel.add(button);
+        
         
         getContentPane().add(topPanel, BorderLayout.NORTH);
         

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="25mm"
+   height="20mm"
+   viewBox="0 0 25 20"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="search.png"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="4.3389453"
+     inkscape:cx="59.922396"
+     inkscape:cy="54.506334"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 1.6418855,7.645036 c -1.3028214,3.579592 0.5428642,7.537609 4.1224469,8.84046 3.0189551,1.08779 6.3893196,-0.05012 8.1310876,-2.745226 0.167179,0.15124 0.365397,0.274062 0.590964,0.356157 l 6.88563,2.252329 c 0.932219,0.339298 1.955877,-0.138042 2.295176,-1.070265 0.339301,-0.932216 -0.13804,-1.955873 -1.070257,-2.295175 l -6.88563,-2.252322 C 15.464485,10.64116 15.211494,10.61011 14.966255,10.628057 15.253056,7.517517 13.413572,4.6025105 10.482436,3.522619 6.9028255,2.2197371 2.9447479,4.06542 1.6418855,7.645036 Z M 3.9440528,8.524301 C 4.7451618,6.3232072 7.1789475,5.1882824 9.3800425,5.9893844 11.581171,6.7905057 12.716092,9.22435 11.914929,11.425464 11.113768,13.62654 8.6799605,14.761409 6.4788815,13.96026 4.2778397,13.159117 3.1429623,10.725364 3.9440528,8.524301 Z"
+       style="fill:#ffc500;fill-opacity:1;stroke:#181653;stroke-width:1.07404;stroke-dasharray:none;stroke-opacity:1"
+       id="path2"
+       sodipodi:nodetypes="cccccscccccccccc" />
+  </g>
+</svg>
