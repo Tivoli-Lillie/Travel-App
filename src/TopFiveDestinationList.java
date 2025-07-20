@@ -66,11 +66,11 @@ class TopDestinationListFrame extends JFrame {
 
 
         //Make updates to your top 5 list below. Import the new image files to resources directory.
-        addDestinationNameAndPicture("1. Top Destination (short sentence description)", new ImageIcon(getClass().getResource("/resources/fuji.jpg")));
-        addDestinationNameAndPicture("2. 2nd Top Destination", new ImageIcon(getClass().getResource("/resources/valencia.jpg")));
-        addDestinationNameAndPicture("3. 3rd Top Destination", new ImageIcon(getClass().getResource("/resources/conchal.jpg")));
-        addDestinationNameAndPicture("4. 4th Top Destination", new ImageIcon(getClass().getResource("/resources/italy.jpg")));
-        addDestinationNameAndPicture("5. 5th Top Destination", new ImageIcon(getClass().getResource("/resources/yellowstone.jpeg")));
+        addDestinationNameAndPicture("1. Top Destination (short sentence description)", new ImageIcon(getClass().getResource("/resources/fuji2.jpg")));
+        addDestinationNameAndPicture("2. 2nd Top Destination", new ImageIcon(getClass().getResource("/resources/valencia2.jpg")));
+        addDestinationNameAndPicture("3. 3rd Top Destination", new ImageIcon(getClass().getResource("/resources/conchal2.jpg")));
+        addDestinationNameAndPicture("4. 4th Top Destination", new ImageIcon(getClass().getResource("/resources/italy2.jpg")));
+        addDestinationNameAndPicture("5. 5th Top Destination", new ImageIcon(getClass().getResource("/resources/yellowstone2.jpg")));
         
         JList list = new JList(listModel);
         JScrollPane scrollPane = new JScrollPane(list);
